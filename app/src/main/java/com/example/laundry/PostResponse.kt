@@ -2,13 +2,13 @@ package com.example.laundry
 
 import com.google.gson.annotations.SerializedName
 
-data class SocialMed(
+data class PostResponse(
 
-	@field:SerializedName("SocialMed")
-	val socialMed: ArrayList<SocialMedItem?>? = null
+	@field:SerializedName("PostResponse")
+	val postResponse: ArrayList<PostResponseItem?>? = null
 )
 
-data class SocialMedItem(
+data class PostResponseItem(
 
 	@field:SerializedName("id")
 	val id: Int? = null,

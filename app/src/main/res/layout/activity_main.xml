@@ -7,56 +7,57 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/judul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login Form"
-            android:textSize="30dp"
             android:layout_gravity="center"
+            android:text="Login Form"
             android:textColor="@color/black"
-            />
-    <EditText
-        android:id="@+id/txtUsername"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:hint="Username"
-        android:layout_marginTop="20dp"
-        />
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="Username"
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/txtPassword"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:hint="Password"
-            android:textAlignment="center"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:inputType="textPassword" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Login"
-            android:textSize="20dp"
-            android:layout_gravity="center"></Button>
-
+            android:textSize="20dp"></Button>
 
 
     </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
